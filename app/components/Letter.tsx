@@ -6,7 +6,7 @@ export default function Letter (){
       <div className="pb-10 px-4 relative ml-2">
           <div className="text-center mb-12">
             <h2
-              className="text-5xl font-bold text-yellow-400 mb-4 font-dancing-script"
+              className="text-5xl font-bold text-[#523d07] mb-4 font-dancing-script"
               style={{ fontFamily: "var(--font-dancing-script)" }}>
               Application Letter
             </h2>
@@ -30,7 +30,7 @@ export default function Letter (){
               <div className="text-center my-8">
                 <h3
                   className="text-2xl font-bold mb-2 font-dancing-script"
-                  style={{ fontFamily: "var(--font-dancing-script)", color: "#FFFF99" }}>
+                  style={{ fontFamily: "var(--font-dancing-script)", color: "#523d07" }}>
                   Dear Recruiting Team
                 </h3>
                 <div
@@ -50,7 +50,7 @@ export default function Letter (){
                     style={{
                       fontFamily: "var(--font-helvetica)",
                       resize: "none",
-                      color: "#FFFF99",
+                      color: "#523d07",
                     }}
                     required
                   />
@@ -58,10 +58,10 @@ export default function Letter (){
               </form>
 
               {/* Letter Footer */}
-              <div className="text-center mt-6 pt-4" style={{ borderTop: "1px solid rgba(208, 198, 5, 0.5)" }}>
+              <div className="text-center mt-6 pt-4" style={{ borderTop: "1px solid #523d07" }}>
                 <p
                   className="text-sm font-dancing-script"
-                  style={{ fontFamily: "var(--font-dancing-script)", color: "#FFFF99" }}>
+                  style={{ fontFamily: "var(--font-dancing-script)", color: "#523d07" }}>
                   To Infinity and Beyond
                 </p>
               </div>

@@ -51,11 +51,11 @@ export default function Me () {
             <div className="text-center mb-16">
               <h2 className="text-5xl font-bold font-dancing-script h-24"
                 style={{
-                  fontFamily: "var(--font-dancing-script)",
-                  background: "linear-gradient(to right, #50C878, #FFD700, #B8860B)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text"}}>
+                    fontFamily: "var(--font-dancing-script)",
+                    background: "#523d07",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text"}}>
                 Me Myelf & I
               </h2>
               <div className="flex justify-center mb-4 space-x-2">
@@ -67,22 +67,22 @@ export default function Me () {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center w-4xl">
               {me.map((img, index) => (
-                  <Card className="bg-white/10 backdrop-blur-md border border-white/20 hover:border-yellow-400/50 hover:bg-white/15 transition-all duration-700 h-80 w-full max-w-sm shadow-xl shadow-black/20 hover:scale-105">
+                  <Card key={index} className="bg-white/10 backdrop-blur-md border border-white/20 hover:border-yellow-400/50 hover:bg-white/15 transition-all duration-700 h-80 w-full max-w-sm shadow-xl shadow-black/20 hover:scale-105">
                     <CardContent className="p-6 h-full flex flex-col">
                     <div className="grid grid-cols-1 place-items-center">
                         <div className="grid grid-cols-3 place-items-center">
-                            <Cigarette className="mr-4"/>
+                            <Cigarette className="mr-4" color="#02c809"/>
                             <h3 className="text-2xl font-semibold group-hover:transition-colors duration-300 font-dancing-script text-center"
                                 style={{
                                     fontFamily: "var(--font-dancing-script)",
-                                    background: "linear-gradient(to left, #e00a0a, #50C878, #FFD700, #B8860B)",
+                                    background: "linear-gradient(to left, #e00a0a, #02c809, #FFD700, #B8860B)",
                                     WebkitBackgroundClip: "text",
                                     WebkitTextFillColor: "transparent",
                                     backgroundClip: "text",
                                 }}>
                                 {img.description}
                             </h3>
-                            <Beer className="ml-4"/>
+                            <Beer className="ml-4" color="#faf8eb"/>
                         </div>
                         <div className="flex items-center my-4">
                           <img src={img.imgUrl} alt="alt" width={666} height={666} className="rounded-2xl" />

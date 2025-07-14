@@ -28,7 +28,7 @@ const skills = [
     skillIcon: "💻",
   },
   {
-    name: "Process Analysis & Automation",
+    name: "Process Automation",
     icon: Zap,
     description: "Optimizing workflows with intelligent automation",
     skillIcon: "⚙️",
@@ -62,7 +62,7 @@ export default function Letter () {
               <h2 className="text-5xl font-bold font-dancing-script h-24"
                 style={{
                   fontFamily: "var(--font-dancing-script)",
-                  background: "linear-gradient(to right, #50C878, #FFD700, #B8860B)",
+                  background: "linear-gradient(to right, #02c809, #B8860B)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text"}}>
@@ -73,24 +73,24 @@ export default function Letter () {
                 <Crown size={50} />
                 <Crown size={50} />
               </div>
-              <p className="text-xl font-dancing-script" style={{ fontFamily: "var(--font-sans-serif)", color: "#FFFF99" }}>
+              <p className="text-xl font-dancing-script" style={{ fontFamily: "var(--font-sans-serif)", color: "#B8860B" }}>
                 Dominance across the Digital Realm
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center w-4xl">
               {skills.map((skill, index) => (
-                  <Card className="bg-white/10 backdrop-blur-md border border-white/20 hover:border-yellow-400/50 hover:bg-white/15 transition-all duration-700 h-80 w-full max-w-sm shadow-xl shadow-black/20 hover:scale-105">
+                  <Card key={index} className="bg-white/10 backdrop-blur-md border border-white/20 hover:border-yellow-400/50 hover:bg-white/15 transition-all duration-700 h-80 w-full max-w-sm shadow-xl shadow-black/20 hover:scale-105">
                     <CardContent className="p-6 h-full flex flex-col">
                       <div className="flex items-center mb-4">
                         <div className="p-3 rounded-full bg-gradient-to-r from-yellow-400/20 to-yellow-600/20 mr-4 group-hover:from-yellow-400/40 group-hover:to-yellow-600/40 transition-all duration-300">
-                          <skill.icon className="w-6 h-6 text-yellow-400" />
+                          <skill.icon className="w-6 h-6 text-[#02c809]" />
                         </div>
                         <h3
                           className="text-2xl font-semibold group-hover:transition-colors duration-300 font-dancing-script"
                           style={{
                             fontFamily: "var(--font-dancing-script)",
-                            background: "linear-gradient(to right, #50C878, #FFD700, #B8860B)",
+                            background: "linear-gradient(to right, #02c809, #B8860B)",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",
@@ -101,13 +101,13 @@ export default function Letter () {
                       <div className="flex-1 flex flex-col items-center justify-center text-center">
                         <p className="group-hover:transition-colors duration-300 font-san-serif mb-4"
                           style={{
-                            background: "#FFFF99",
+                            background: "#B8860B",
                             WebkitBackgroundClip: "text",
                             WebkitTextFillColor: "transparent",
                             backgroundClip: "text",}}>
                           {skill.description}
                         </p>
-                        <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300 bg-[#02c809">
                           {skill.skillIcon}
                         </div>
                       </div>
