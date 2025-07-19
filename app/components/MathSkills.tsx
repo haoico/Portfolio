@@ -57,11 +57,7 @@ export default function MathSkills () {
                   <CardContent className="p-6 h-full flex flex-col">
                     <div className="flex items-center mb-4">
                       <div className="p-3 rounded-full bg-gradient-to-r from-yellow-400/20 to-yellow-600/20 mr-4 group-hover:from-yellow-400/40 group-hover:to-yellow-600/40 transition-all duration-300">
-                        {skill.name === "Computer Graphics" ? (
-                          <Crown size={24} className="text-yellow-400" />
-                        ) : (
-                          <skill.icon className="w-6 h-6 text-yellow-400" />
-                        )}
+                          <skill.icon className="w-6 h-6 text-[#02c809]" />
                       </div>
                       <h3 className="text-2xl font-semibold group-hover:transition-colors duration-300 font-dancing-script"
                         style={{

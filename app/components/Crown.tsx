@@ -21,9 +21,9 @@ export const Crown = ({ className = "", size = 40 }) => (
       strokeWidth="1"
       filter="url(#glow)"
     />
-    <circle cx="30" cy="45" r="3" fill="#50C878" />
-    <circle cx="50" cy="35" r="4" fill="#fb5cf6" />
-    <circle cx="70" cy="45" r="3" fill="#50C878" />
+    <circle cx="30" cy="45" r="3" fill="#02c809" />
+    <circle cx="50" cy="35" r="4" fill="#fa06f2" />
+    <circle cx="70" cy="45" r="3" fill="#02c809" />
     <rect x="20" y="70" width="60" height="8" fill="url(#crownGradient)" stroke="#b45309" strokeWidth="1" />
   </svg>
 )

@@ -58,6 +58,15 @@ export default function Me () {
                     backgroundClip: "text"}}>
                 Me Myelf & I
               </h2>
+              <h2 className="text-2xl font-bold font-dancing-script h-18"
+                style={{
+                    fontFamily: "var(--font-dancing-script)",
+                    background: "#523d07",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text"}}>
+                https://github.com/haoico
+              </h2>
               <div className="flex justify-center mb-4 space-x-2">
                 <Crown size={50} />
                 <Crown size={50} />
