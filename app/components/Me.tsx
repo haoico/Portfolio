@@ -4,6 +4,7 @@ import {
     Beer
 } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
 
 const me = [
     {
@@ -49,16 +50,28 @@ export default function Me () {
   return (
         <div className="py-20 grid grid-cols-1">
             <div className="text-center mb-16">
-              <h2 className="text-5xl font-bold font-dancing-script h-24"
-                style={{
-                    fontFamily: "var(--font-dancing-script)",
-                    background: "#523d07",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text"}}>
-                Me Myelf & I
-              </h2>
-              <h2 className="text-2xl font-bold font-dancing-script h-18"
+                <div className="flex items-center justify-center">
+                        <Image src="/Agent1.jpg" alt="DragonDeco4" width={223} height={315} className="border-2 border-yellow-400 shadow-2xl shadow-yellow-400/50 rounded-tl-2xl rounded-tr-2xl"/>
+                </div>
+                <div className="grid grid-cols-3">
+                    <div className="flex items-center justify-center">
+                        <Image src="/DragonImages/DragonDeco6.jpeg" alt="DragonDeco4" width={250} height={250} className="border-2 border-green-400 shadow-2xl shadow-green-400/50 rounded-tl-2xl rounded-bl-2xl"/>
+                    </div>
+                    <h2 className="text-5xl font-bold font-dancing-script h-24 mt-26"
+                        style={{
+                            fontFamily: "var(--font-dancing-script)",
+                            background: "#523d07",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            backgroundClip: "text"}}>
+                        Me Myself & I <br></br>
+                    </h2>
+                    <div className="flex items-center justify-center">
+                        <Image src="/PinkCat.jpeg" alt="DragonDeco4" width={250} height={250} className="border-2 border-pink-400 shadow-2xl shadow-pink-400/50 rounded-br-2xl rounded-tr-2xl"/>
+                    </div>
+                </div>
+
+              <h2 className="text-2xl font-bold font-dancing-script h-18 mt-18"
                 style={{
                     fontFamily: "var(--font-dancing-script)",
                     background: "#523d07",
@@ -67,14 +80,9 @@ export default function Me () {
                     backgroundClip: "text"}}>
                 https://github.com/haoico
               </h2>
-              <div className="flex justify-center mb-4 space-x-2">
-                <Crown size={50} />
-                <Crown size={50} />
-                <Crown size={50} />
-              </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center w-4xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center w-4xl ml-10">
               {me.map((img, index) => (
                   <Card key={index} className="bg-white/10 backdrop-blur-md border border-white/20 hover:border-yellow-400/50 hover:bg-white/15 transition-all duration-700 h-80 w-full max-w-sm shadow-xl shadow-black/20 hover:scale-105">
                     <CardContent className="p-6 h-full flex flex-col">

@@ -1,4 +1,5 @@
 import { Crown } from "./Crown"
+import Image from "next/image";
 
 export default function Letter (){
 
@@ -17,8 +18,14 @@ export default function Letter (){
             </div>
           </div>
 
-            <div
-              className="px-8 py-4 rounded-lg shadow-2xl relative overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 hover:border-yellow-400/50">
+          <div className="grid grid-cols-3 place-items-center">
+            <div className="grid grid-cols-1">
+              <Image src="/DragonImages/DragonDeco1.jpeg" alt="DragonDeco1" width={250} height={250} className="border-2 border-green-400 shadow-2xl shadow-green-400/50"/>
+              <Image src="/DragonImages/DragonDeco2.jpeg" alt="DragonDeco2" width={250} height={250} className="border-2 border-green-400 shadow-2xl shadow-green-400/50"/>
+              <Image src="/DragonImages/DragonDeco3.jpeg" alt="DragonDeco3" width={250} height={250} className="border-2 border-green-400 shadow-2xl shadow-green-400/50"/>
+            </div>
+
+            <div className="px-8 py-4 rounded-lg shadow-2xl relative overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 hover:border-yellow-400/50">
               {/* Decorative corners */}
               <div className="grid grid-cols-12 ml-2">
                 {Array.from({ length: 12 }).map((_, index) => (
@@ -66,6 +73,14 @@ export default function Letter (){
                 </p>
               </div>
             </div>
+
+            <div className="grid grid-cols-1">
+              <Image src="/DragonImages/DragonDeco5.jpeg" alt="DragonDeco4" width={250} height={250} className="border-2 border-green-400 shadow-2xl shadow-green-400/50"/>
+              <Image src="/DragonImages/OGDragon.jpeg" alt="DragonDeco5" width={250} height={250} className="border-2 border-green-400 shadow-2xl shadow-green-400/50"/>
+              <Image src="/DragonImages/DragonDeco7.jpeg" alt="DragonDeco6" width={250} height={250} className="border-2 border-green-400 shadow-2xl shadow-green-400/50"/>
+            </div>
+          </div>
+
       </div>
   )
 }
