@@ -5,7 +5,7 @@ import Letter from "./components/Letter";
 import { Hero } from "./components/Hero";
 import SoftwareSkills from "./components/SoftwareSkills";
 import MathSkills from "./components/MathSkills";
-import Me from "./components/Me";
+import BookSection from "./components/Book";
 
 export default function Home() {
 
@@ -28,8 +28,8 @@ export default function Home() {
         <MathSkills/>
       </div>
 
-      <div className="pt-24">
-        <Me/>
+      <div className="pt-12">
+        <BookSection/>
       </div>
 
     </div>
