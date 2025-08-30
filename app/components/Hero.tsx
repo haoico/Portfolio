@@ -29,7 +29,7 @@ export const Hero = () => (
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
               }}>
-                Chinese Mexican Japanese American
+                Chinese American Japanese Netherlands
               </p>
             </div>
             
